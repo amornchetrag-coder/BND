@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="BND — premium multi-brand sneakers in Thailand. Step Beyond Ordinary.">
+<title>BND — Step Beyond Ordinary</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="announcement">BND SELECTS — STREET CULTURE, CONSIDERED <span>THAILAND · ONLINE EXCLUSIVE</span></div>
+<header class="site-header">
+  <a class="wordmark" href="#home" aria-label="BND home">BND<span>.</span></a>
+  <nav aria-label="Main navigation"><a href="#shop">SHOP</a><a href="#story">OUR STORY</a><a href="#service">BND STANDARD</a></nav>
+  <div class="header-actions"><button class="icon-button" id="searchToggle" aria-label="Show search">⌕</button><button class="bag-button" id="bagButton">BAG <span id="bagCount">0</span></button><button class="menu-button" id="menuToggle" aria-label="Open menu">☰</button></div>
+</header>
+<main id="home">
+<section class="hero">
+  <div class="hero-copy"><p class="eyebrow"><span class="red-dot"></span> THE ROTATION STARTS HERE</p><h1>STEP BEYOND<br><em>ORDINARY.</em></h1>
+  <p class="hero-description">A considered rotation of icons, modern classics and everyday essentials. Find your next pair. Make it yours.</p>
+  <div class="hero-ctas"><a class="button button-light" href="#shop">SHOP THE EDIT <span>↗</span></a><a class="text-link" href="#story">THE BND POINT OF VIEW <span>→</span></a></div>
+  <div class="hero-foot"><span>CURATED IN THAILAND</span><span>EST. 2026 / INDEPENDENT CONCEPT</span></div></div>
+  <div class="hero-visual"><div class="hero-grid"></div><div class="hero-label">BND<br>SELECTS<br><span>NO. 001—006</span></div><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=90" alt="Red sneaker featured in BND campaign"><div class="hero-sticker">BUILT<br>FOR YOUR<br><b>ROTATION ↗</b></div><div class="vertical-note">THE EVERYDAY, ELEVATED</div></div>
+</section>
+<div class="brand-strip"><span>NIKE</span><span>ADIDAS</span><span>NEW BALANCE</span><span>ASICS</span><span>CONVERSE</span></div>
+<section class="shop-section section-pad" id="shop">
+  <div class="section-heading"><div><p class="eyebrow">THE BND SELECTION / 001</p><h2>FIND YOUR<br><em>EVERYDAY ICON.</em></h2></div><p class="section-intro">Not more sneakers. Better choices. A tight edit of silhouettes that earn their place in your rotation.</p></div>
+  <div class="filter-row"><div class="filters" id="filters"><button class="filter active" data-filter="All">ALL PAIRS <span>06</span></button><button class="filter" data-filter="Nike">NIKE</button><button class="filter" data-filter="Adidas">ADIDAS</button><button class="filter" data-filter="New Balance">NEW BALANCE</button><button class="filter" data-filter="ASICS">ASICS</button><button class="filter" data-filter="Converse">CONVERSE</button></div><label class="sort-label">SORT BY <select id="sortSelect"><option value="featured">FEATURED</option><option value="low">PRICE: LOW TO HIGH</option><option value="high">PRICE: HIGH TO LOW</option></select></label></div>
+  <div class="product-grid" id="productGrid"></div>
+  <p class="demo-note">Student concept storefront. Product availability and listed prices are illustrative; verify stock, pricing and authorized sourcing before any real sale.</p>
+</section>
+<section class="manifesto" id="story"><div class="manifesto-number">01 / THE BND POINT OF VIEW</div><div class="manifesto-content"><p class="eyebrow">LESS NOISE. MORE INTENTION.</p><h2>YOUR STYLE.<br><em>YOUR ROTATION.</em></h2><p>BND is a fictional sneaker boutique concept built around a simple idea: the right pair should feel like you. We bring together recognizable silhouettes across sport, street and everyday style — with clear product information and a shopping experience that respects your time.</p><a href="#shop" class="button button-red">EXPLORE THE SELECTION <span>↗</span></a></div><div class="manifesto-mark">BND<span>.</span></div></section>
+<section class="service-section section-pad" id="service"><div class="section-heading"><div><p class="eyebrow">THE BND STANDARD</p><h2>GOOD PAIRS.<br><em>NO GUESSWORK.</em></h2></div></div><div class="service-grid"><article><span>01</span><h3>CURATED, NOT CROWDED</h3><p>A focused edit across five familiar brands makes discovery easier.</p></article><article><span>02</span><h3>CLARITY FIRST</h3><p>Transparent product details and clear pricing help customers choose confidently.</p></article><article><span>03</span><h3>BUILT FOR MOBILE</h3><p>A responsive storefront designed for how people shop on the move.</p></article></div></section>
+<section class="newsletter"><div><p class="eyebrow">GET IN THE ROTATION</p><h2>GOOD THINGS<br><em>DON'T STAY STILL.</em></h2></div><form id="newsletterForm"><label for="email">DROP YOUR EMAIL FOR BND UPDATES</label><div class="email-row"><input id="email" type="email" placeholder="you@example.com" required><button type="submit" aria-label="Subscribe">↗</button></div><small id="newsletterMessage">Demo form only — no email is sent or stored.</small></form></section>
+</main>
+<footer class="footer"><a class="wordmark" href="#home">BND<span>.</span></a><p>STEP BEYOND ORDINARY.</p><div><a href="#shop">SHOP</a><a href="#story">ABOUT</a><a href="#service">STANDARD</a></div><small>© 2026 BND CONCEPT STORE · EDUCATIONAL PROJECT · NOT AFFILIATED WITH FEATURED BRANDS</small></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="bag-panel" id="bagPanel" aria-label="Shopping bag"><div class="bag-panel-head"><h3>YOUR BAG <span id="bagPanelCount">0</span></h3><button id="closeBag" aria-label="Close bag">×</button></div><div id="bagItems" class="bag-items"><p class="empty-bag">Your rotation starts here.</p></div><div class="bag-total"><span>SUBTOTAL</span><strong id="bagTotal">฿0</strong></div><button class="button button-red checkout-button" id="checkoutButton">CONTINUE <span>↗</span></button><small>Demo checkout — no payment is collected.</small></div>
+<div class="overlay" id="overlay"></div>
+<script src="script.js"></script>
+</body></html>
